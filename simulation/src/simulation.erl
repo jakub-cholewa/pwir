@@ -3,6 +3,8 @@
 
 -include("records.hrl").
 
+-export([start/2, stop/1]).
+
 read_world_parameters() ->
   LightTime = application:get_env(crossroad, light_time, 5000),
   YellowLightTime = application:get_env(crossroad, light_time, 3000),

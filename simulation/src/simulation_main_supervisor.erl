@@ -4,6 +4,7 @@
 -include("records.hrl").
 
 -export([start_link/1, init/1]).
+-export([generate_world/1]).
 
 start_link(WorldParameters) ->
   supervisor:start_link({local, ?MODULE}, ?MODULE, WorldParameters).
@@ -36,3 +37,8 @@ init(WorldParameters) ->
     [simulation_event_stream]},
 
   {ok, {{one_for_one, 1, 60}}}.
+
+generate_world(WorldParameters) ->
+  simulation_simulations_supervisor:generate_world(WorldParameters).
+
+
