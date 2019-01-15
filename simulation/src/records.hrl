@@ -1,0 +1,2 @@
+-record(position, {x,y}).
+-record(world_parameters, {light_time, yellow_light_time, car_number}).
