@@ -3,7 +3,7 @@
 
 -include("records.hrl").
 
--export([read_world_parameters/0, start/2, stop/1]).
+-export([start/2, stop/1]).
 
 read_world_parameters() ->
   LightTime = application:get_env(crossroad, light_time, 5000),
