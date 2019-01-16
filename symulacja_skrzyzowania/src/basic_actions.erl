@@ -1,5 +1,4 @@
 -module(basic_actions).
--author("molion").
 
 -include("../include/records.hrl").
 

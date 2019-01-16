@@ -1,5 +1,4 @@
 -module(cars_generator).
--author("molion").
 
 -behavior(gen_server).
 

@@ -1,5 +1,4 @@
 -module(simulations_supervisor).
--author("molion").
 
 -behavior(supervisor).
 

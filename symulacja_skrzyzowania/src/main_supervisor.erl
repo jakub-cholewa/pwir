@@ -1,5 +1,4 @@
 -module(main_supervisor).
--author("molion").
 
 -behavior(supervisor).
 
@@ -26,6 +25,8 @@ stop_simulation() ->
 generate_cars(WorldParameters, Amount) ->
   simulations_supervisor:generate_cars(WorldParameters, Amount).
 
+%%add_socket_handler() ->
+%%  simulation_event_stream:add_socket_handler().
 
 init(WorldParameters) ->
   Args = [ WorldParameters ],
