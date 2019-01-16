@@ -1,4 +1,4 @@
--module(simulations_supervisor).
+-module(simulation_supervisor).
 
 -behavior(supervisor).
 

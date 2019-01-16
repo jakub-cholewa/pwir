@@ -1,7 +1,7 @@
 { application, symulacja_skrzyzowania,
  [ { description, "Crossroad simulation in Erlang with Cars." },
    { vsn, "1.0" },
-   { modules, [ basic_actions,	cars_generator, main_supervisor, simulations_supervisor, controller] },
+   { modules, [ main_supervisor, simulation_supervisor, simulation, controller, event_stream, basic_actions, cars_generator] },
    { registered, [] },
    { applications, [ kernel, stdlib, sasl ] },
    { env, [] },

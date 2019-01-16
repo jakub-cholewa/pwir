@@ -54,9 +54,9 @@ handle_call({generate_cars, Amount}, _From, {started,WorldParameters}) ->
 handle_call({generate_cars, _Amount}, _From, {stopped,WorldParameters}) ->
   {reply, cars_not_generated, {stopped,WorldParameters}}.
 
-%%handle_cast(start_socket_handler, State) ->
-%%  main_supervisor:add_socket_handler(),
-%%  {noreply, State};
+handle_cast(start_socket_handler, State) ->
+  main_supervisor:add_socket_handler(),
+  {noreply, State};
 handle_cast(_Request, State) ->
   {noreply, State}.
 
