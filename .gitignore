@@ -1,2 +1,5 @@
 *.iml
 .idea/
+symulacja_skrzyzowania/_build/
+symulacja_skrzyzowania/rebar.*
+symulacja_skrzyzowania/rebar3
