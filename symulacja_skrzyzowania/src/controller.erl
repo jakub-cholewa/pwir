@@ -33,7 +33,7 @@ generate_cars(Amount) ->
 init(WorldParameters) ->
   {ok, {stopped,WorldParameters}}.
 
-handle_call(start_simulation, _From, {stopped,WorldParameters}) ->
+handle_call(start_simulation, _From, {stopped, WorldParameters}) ->
   main_supervisor:start_simulation(WorldParameters),
   {reply, started, {started,WorldParameters}};
 

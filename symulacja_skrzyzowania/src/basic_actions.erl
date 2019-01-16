@@ -24,7 +24,8 @@ random_directions(0,List) ->
 random_directions(N,List) ->
   random_directions(N - 1, [random_direction()|List]).
 
-random_destination() -> random_direction().
+random_destination() ->
+  random_direction().
 
 
 get_start_points(car,_WorldParameters) ->
