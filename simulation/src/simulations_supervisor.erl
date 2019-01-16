@@ -36,7 +36,7 @@ generate_cars(WorldParameters, 0) ->
   done;
 generate_cars(WorldParameters, Amount) ->
   Pos = lists:nth(rand:uniform(4), simulation_defaults:get_start_points(car, WorldParameters)),
-  gen_server:cast(cars_generator, {add, Pos}),
+  gen_server:cast(cars_supervisor, {add, Pos}),
   generate_cars(WorldParameters, Amount-1).
 
 %% Supervisor callbacks
